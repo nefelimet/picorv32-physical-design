@@ -1,7 +1,7 @@
 # picorv32-physical-design
 Physical design flow of the PicoRV32 processor using Cadence Genus and Innovus
 
-<img src="https://github.com/user-attachments/assets/85111636-1ae3-4d0c-b187-da7e42a371a0" alt="drawing" style="width:300px;"/>
+<img src="https://github.com/user-attachments/assets/2334b25a-6588-4c73-95a6-faa307cef18b" alt="drawing" style="width:300px;"/>
 
 ## Description
 
@@ -101,7 +101,7 @@ createPGPin VDD -net VDD -geom Metal10 65 0 75 12
 editPowerVia -add_vias 1 -top_layer Metal11 -area {65 9 75 12} -bottom_layer Metal10
 ```
 
-<img src="https://github.com/user-attachments/assets/bb430350-04fa-46f3-aa3d-ac5a1452be0e" alt="drawing" style="width:300px;"/>
+<img src="https://github.com/user-attachments/assets/e0b9d99f-57cc-4290-a9a1-78e9ad094a75" alt="drawing" style="width:300px;"/>
 
 ## Placement and Routing
 
@@ -119,11 +119,11 @@ output:
 
 The placement is executed: `place_opt_design`.
 
-<img src="https://github.com/user-attachments/assets/18c3d2f4-3f88-484b-b58a-8d6f7b6193e5" alt="drawing" style="width:300px;"/>
+<img src="https://github.com/user-attachments/assets/53653fa5-d845-44b3-9824-8792e78f2300" alt="drawing" style="width:300px;"/>
 
 For routing we use Early Global Routing, utilizing all layers (M1 to M11). The congestion map is shown below:
 
-<img src="https://github.com/user-attachments/assets/91f4ad23-0a2f-4335-8d91-7d80e54c8294" alt="drawing" style="width:300px;"/>
+<img src="https://github.com/user-attachments/assets/d602ecbe-f44a-45da-96c9-dc7bd9bd9fc5" alt="drawing" style="width:300px;"/>
 
 63% of bins have a density higher than 75%.
 
@@ -177,7 +177,7 @@ There are 0 errors and 4 warnings regarding: floating ports, ports connected to 
 
 At the end, the processor design looks like this:
 
-<img src="https://github.com/user-attachments/assets/85111636-1ae3-4d0c-b187-da7e42a371a0" alt="drawing" style="width:300px;"/>
+<img src="https://github.com/user-attachments/assets/2334b25a-6588-4c73-95a6-faa307cef18b" alt="drawing" style="width:300px;"/>
 
 ## Design For Testability (DFT)
 
