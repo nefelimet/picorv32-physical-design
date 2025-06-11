@@ -188,3 +188,14 @@ A new tcl file is created, which is similar to the original one, but contains th
 ```bash
 genus -f proj_dir/run_dft.tcl
 ```
+
+The dft_check states that there are 0 DFT rule violations. The DFT check results are shown below:
+
+
+| Metric        | Value         | 
+| ----------------- |:-------------:| 
+| Usable scan cells      | 48         | 
+| Total number of test clock domains  | 1        | 
+| Number of registers in scanclk (pre-synthesis) | 1728           |  
+| Number of registers in scanclk (post-synthesis) | 1555           |  
+| Percentage of registers that are scannable | 100% |
